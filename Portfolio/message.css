@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+:root {
+  --primary-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url('laptop.avif');
+  background-color: dimgrey;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.boxes-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; 
+  flex-wrap: wrap; 
+  gap: 40px; 
+  padding: 100px; 
+}
+
+
+.container {
+  flex-basis: 30%; 
+  height: auto;
+  width: auto;
+  min-width: 300px;
+  min-height: 560px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px; 
+}
+
+.full-width-line {
+	border: none;
+	height: 1px;
+	background-color: #fff;
+	width: calc(100% - 60px); 
+	margin-left: 10px;
+  }
+
+.container .brand {
+  width: 100%; 
+  padding: 1px 100px; 
+  margin-bottom: 10px; 
+  margin-left: 25px;
+}
+
+.container .brand h3 {
+  display: inline;
+  font-weight: 400;
+  font-size: 20px;
+  color: orange;
+}
+
+.desc h5{
+  display: inline;
+  color: orange;
+  font-size: 85%;
+  font-weight: 300;
+}
+
+.desc h4{
+  display: inline;
+  color: white;
+  font-size: 85%;
+  font-weight: 300;
+  line-height: 1.6
+}
+
+.full-width-line {
+  border: none;
+  height: 1px;
+  background-color: #fff;
+  width: calc(100% - 1px);
+  margin-left: 1px;
+}
+
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block; 
+  margin-bottom: 20px; 
+  margin-top: 20px;
+
+}
+
+.container .brand a#toggle {
+  position: absolute;
+  top: 14px; 
+  right: 20px; 
+  font-weight: 300;
+	font-size: 31px;
+  color: white;
+}
+
