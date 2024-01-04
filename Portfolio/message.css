@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+:root {
+  --primary-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url('laptop.avif');
+  background-color: dimgrey;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.boxes-container {
+  display: flex;
+  justify-content: space-around; /* This will space the boxes evenly */
+  align-items: flex-start; /* Aligns the top of the boxes */
+  flex-wrap: wrap; /* Allows boxes to wrap onto the next line if the screen is too small */
+  gap: 40px; /* Spacing between boxes */
+  padding: 100px; /* Padding around the entire boxes container */
+}
+
+
+.container {
+  flex-basis: 30%; /* Each box will take up roughly a third of the container's width */
+  height: auto;
+  width: auto;
+  min-width: 300px;
+  min-height: 560px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px; /* Padding inside the boxes */
+}
+
+.full-width-line {
+	border: none;
+	height: 1px;
+	background-color: #fff; /* or any color that suits your design */
+	width: calc(100% - 60px); /* adjust the calc() as necessary to account for padding/margins */
+	margin-left: 10px; /* adjust as necessary to align with the left side */
+  }
+
+.container .brand {
+  width: 100%; /* Full width */
+  padding: 1px 100px; /* Padding for the brand bar */
+  margin-bottom: 10px; /* Space below the brand bar */
+  margin-left: 25px;
+}
+
+.container .brand h3 {
+  display: inline;
+  font-weight: 400;
+  font-size: 20px;
+  color: orange;
+}
+
+.desc h5{
+  display: inline;
+  color: orange;
+  font-size: 85%;
+  font-weight: 300;
+}
+
+.desc h4{
+  display: inline;
+  color: white;
+  font-size: 85%;
+  font-weight: 300;
+  line-height: 1.6
+}
+
+.full-width-line {
+  border: none;
+  height: 1px;
+  background-color: #fff;
+  width: calc(100% - 1px);
+  margin-left: 1px;
+}
+
+
+.project-image {
+  width: 100%; /* makes the image take the full width of the container */
+  height: auto; /* maintains the aspect ratio of the image */
+  display: block; /* prevents inline behavior */
+  margin-bottom: 20px; /* adds space between the image and the text below it */
+  margin-top: 20px;
+
+}
+
+.container .brand a#toggle {
+  position: absolute;
+  top: 14px; /* Adjust the top value as needed */
+  right: 20px; /* Adjust the right value as needed */
+  font-weight: 300;
+	font-size: 31px;
+  color: white;
+}
+
